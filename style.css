@@ -1,0 +1,70 @@
+* { margin: 0px; padding: 0px;
+}
+#mainpage_container {
+    background-color: #FFFFFF;
+}
+#intro_column {
+    background-color: #FFFFFF; line-height: 17px on 24px; font-style: italic;
+}
+#itsecurity_column {
+    background-color: #FFFFFF;
+}
+#cybersecurity_column {
+    background-color: #FFFFFF;
+}
+#itsecurityvscybersecurity_column {
+    background-color: #FFFFFF;
+}
+h1 { font-family: Verdana, sans-serif; font-weight: bold; line-height: 40px on 66px;
+}
+h2 { font-family: Verdana, sans-serif; font-weight: bold; line-height: 15px on 44px; font-variant: 
+    small-caps; letter-spacing: 1px; margin-top: 16px; margin-bottom: 4px;
+}
+h3 { font-family: Georgia, serif; font-style: italic; font-weight: bold; line-height: 20px on 24px; 
+    margin-top: 12px; margin-bottom: 4px;
+}
+p { font-family: Georgia, serif; line-height: 16px on 22px; margin-bottom: 8px;
+}
+@media (min-width: 690px) {
+    #mainpage_container {
+        overflow: hidden;
+    }
+    #intro_column {
+        float: left; margin-left: 4%; width: 90%;
+    }
+    #itsecurity_column {
+        width: 43%; margin-left: 4%; float: left;
+    }
+    #cybersecurity_column {
+        width: 43%; margin-left: 4%; float: left;
+    }
+    #itsecurityvscybersecurity_column {
+        width: 43%; margin-left: 4%; float: left;
+    }
+}
+@media (min-width: 1015px) {
+    #intro_column {
+        width: 30%; line-height: 17px on 24px; font-style: italic; margin-left: 4%; width: 26%;
+    }
+    #itsecurity_column {
+        width: 30%; margin-left: 4%;
+    }
+    #cybersecurity_column {
+        width: 30%; margin-left: 4%;
+    }
+    #itsecurityvscybersecurity_column {
+        width: 30%; margin-left: 4%;
+    }
+}
+body { background-image: 
+    url(https://raw.githubusercontent.com/sunnylin2/IST4310/main/lab10/images/x-gray.png);
+}
+img { width: 100%;
+}
+
+
+
+
+
+
+

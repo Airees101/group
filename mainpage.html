@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            /*Style the Responsive Top Navigation Menu*/
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .topnav {
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .topnav a.active {
+                background-color: #5499C7;
+                color: white;
+            }
+
+            .topnav .icon {
+                display: none;
+            }
+
+            @media screen and (max-width: 600px) {
+                .topnav a:not(:first-child) {
+                    display: none;
+                }
+
+                .topnav a.icon {
+                    float: right;
+                    display: block;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                .topnav.responsive {
+                    position: relative;
+                }
+
+                .topnav.responsive .icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                .topnav.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+            }
+
+            /*Style the flip cards*/
+            .flip-card {
+                background-color: transparent;
+                width: 500px;
+                height: 300px;
+                perspective: 1000px;
+            }
+
+            .flip-card-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.6s;
+                transform-style: preserve-3d;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+
+            .flip-card:hover .flip-card-inner {
+                transform: rotateY(180deg);
+            }
+
+            .flip-card-front, .flip-card-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+
+            .flip-card-front {
+                background-color: #bbb;
+                color: black;
+            }
+
+            .flip-card-back {
+                background-color: #2980b9;
+                color: white;
+                transform: rotateY(180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="mainpage.html" class="active">Home</a>
+            <a href="hoc.html">History of Cybersecurity</a>
+            <a href="mpv.html">Malware/Virus Preventions</a>
+            <a href="cert.html">Certification</a>
+            <a href="joi.html">Job Opportunities and Internships</a>
+            <a href="info.html">Get in Touch</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+        <body>
+            <div id="mainpage_container">
+                <div id="intro_column">
+                <h1>What is Information Technology Security or Cybersecurity?</h1>
+                <h3>
+                     Introduction to Information Technology Security/Cybersecurity<br>
+                </h3>
+                <p>Cybersecurity or information technology Security is a field within information
+		   technology involving the protection of computer systems and the prevention of
+		   unauthorized use or changes or access of electronic data. It deals with the
+		   protection of software, hardware, networks and its information. Due to the heavy
+		   reliance on computers in the modern industry that store and transmit an abundance
+		   of confidential information about people, cyber security is a critical function and
+		   needed insurance of many businesses. It also protects computer systems from theft or damage.</p>
+                </div>
+                <p>
+                    <i>Hover over the image below:</i>
+                </p>
+                <h1>What is IT Security?</h1>
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img src="http://omega/main/group/images/itsecurity-cybersecurity.png" alt="Avatar" style="width:500px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                <p>IT security, also known as information security or InfoSec practically refers
+		   to data security. Essential concerns of IT security can be summed up in CIA triad:
+		   confidentiality, integrity and availability of the data. In other words, IT security
+		   aims to keep an organization's data safe and reliable. As the broad definition implies,
+		   IT security covers a vast area including cyber security. Which means, it is possible
+		   to be an IT expert without specializing in cyber security.</p>
+                </div>
+                </div>
+                </div>
+                <h1>What is Cybersecurity?</h1>
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img src="http://omega/main/group/images/cybersecurity.jpeg" alt="Avatar" style="width:500px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                <p>Similar to IT security, cyber security aims to keep information safe but it
+		   especially focuses on the data in digital form: mobile devices, tablets, computers,
+		   work stations, servers, networks and such. The purpose of all cyber security
+		   practices is keeping electronic data from unauthorized access. In order to do so,
+		   cyber security professionals opt for various protocols and methods including the
+		   identification of sensitive and/or valuable data, alleviation of vulnerable spots
+		   in the security facade of an organization, assessment of risks and much more.</p>
+                </div>
+                </div>
+                </div>
+                <h1>IT Security vs Cybersecurity</h1>
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                <img src="http://omega/main/group/images/itsecurity_vs_cybersecurity.png" alt="Avatar" style="width:500px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                <p>As we mentioned above, both IT security and cyber security aim to protect information.
+		   IT security refers to a broader area. It focuses on protecting important data from any
+		   kind of threat. Moreover, it deals with both digital information and analog information.
+		   Whereas cyber security focuses on digital information but also, it deals with other
+		   things as well: Cyber crimes, cyber attacks, cyber frauds, law enforcement and such.
+		   It might be beneficial for you and for your organization to check SIEM and SOAR solutions
+		   of Logsign in order to protect your organization.</p>
+                </div>
+                </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

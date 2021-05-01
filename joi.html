@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /*Style the Responsive Top Navigation Menu*/
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #5499C7;
+            color: white;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+        body {
+            background-image: url("https://pmcaonline.org/wp-content/uploads/2019/08/cybersecurity-1024x704.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        #borderimg {
+            border: 2px solid;
+            padding: 15px;
+            width: 500px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="mainpage.html">Home</a>
+        <a href="hoc.html">History of Cybersecurity</a>
+        <a href="mpv.html">Malware/Virus Preventions</a>
+        <a href="cert.html">Certification</a>
+        <a href="joi.html" class="active">Job Opportunities and Internships</a>
+        <a href="info.html">Get in Touch</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+    </script>
+
+    <body></body>
+    <h1>Job Opportunities and Internships</h1>
+    <p>Here are some job opportunities for cybersecurity jobs. Just click the images bottom to get redirected to their viewing websites.</p>
+
+    <p id="borderimg"><a href="https://app.joinhandshake.com/login/"><img src="http://omega/main/group/images/handshake.png" style="width:500px;height:300px;"></a></p>
+    <p id="borderimg"><a href="https://www.linkedin.com/"><img src="http://omega/main/group/images/linkedin.png" style="width:500px;height:300px;"></a></p>
+
+</body>
+
+</html>
+
+
+
+
+
+
+

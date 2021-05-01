@@ -1,0 +1,28 @@
+{
+margin: 5px; padding: 0px;
+}
+p { font-family: Georgia, serif; line-height: 16px on 22px; margin-bottom: 8px;
+}
+@media (min-width: 690px) {
+    #mainpage_container {
+        overflow: hidden;
+    }
+img { width: 270px; text-align: center; border: 5px solid black;
+}
+h1 { font-family: Georgia, sans-serif; font-weight: bold; line-height: 40px on $; background-color: ;
+}
+h2 { font-family: Georgia, sans-serif; font-weight: bold; line-height: 40px on $; background-color: ; text-color: blue;
+}
+h3 { font-family: Georgia, sans-serif; font-weight: bold; line-height: 40px on $; background-color: ;
+}
+h4 { font-family: Georgia, sans-serif; font-weight: bold; line-height: 40px on $; background-color: ;
+}
+h5 { font-family: Georgia, sans-serif; font-weight: bold; line-height: 40px on $; background-color: ;
+}
+.center {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 75%;
+}
+

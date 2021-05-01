@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /*Style the Responsive Top Navigation Menu*/
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #5499C7;
+            color: white;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        /* Style the tab */
+        .tab {
+            float: left;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+            width: 30%;
+            height: 300px;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            display: block;
+            background-color: inherit;
+            color: black;
+            padding: 22px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            width: 70%;
+            border-left: none;
+            height: 300px;
+            display: none;
+        }
+
+        /* Clear floats after the tab */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /*Style for MPV*/
+        .banner {
+            height: 300px;
+            background: url("https://www.wikocard.it/wp-content/uploads/2019/10/Differenza-tra-virus-e-malware.png") center;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+        }
+
+        h1 {
+            background-color: #E91640;
+        }
+
+        .myDiv {
+            border: 2px outset #E91640;
+            background-color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="mainpage.html">Home</a>
+        <a href="hoc.html">History of Cybersecurity</a>
+        <a href="mpv.html" class="active">Malware/Virus Preventions</a>
+        <a href="cert.html">Certification</a>
+        <a href="joi.html">Job Opportunities and Internships</a>
+        <a href="info.html">Get in Touch</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+    </script>
+
+    <div class="banner"></div>
+    <div class="myDiv" align="center">
+         <h1>Why Anti-virus Software is So Important?</h1>
+         <p><b>Antivirus software has grown as an essential necessity for
+	       computer user with a wide range of products from various
+	       platforms. The logic behind this is, if you wouldn't leave
+	       your door open for strangers when you aren't home, then why
+	       would you do the same with your computers and devices as if
+	       they were big targets for attackers to attempt to steal your
+	       personal secret information? In todays society different types
+	       of attacks are coming out left and right, but you can easily
+	       avoid and lower your chances of attacks against you by getting
+	       antivirus software. It's never been as easy as it is now, you
+	       can simply hop right on amazon and search antivirus software
+	       and be protected in less than 10 minutes! But don't get too
+	       comfortable, you're not done, you have to make sure you are
+	       keeping up with your updates to ensure your system is safe
+	       against the latest patches and vulnerabilities.</b></p>
+
+         <table>
+         <thead>
+         <tr>
+         <th>The Benefits of Anti-virus Software</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr>
+         <td>
+         <ul>
+         <li>Currently more than 50,000 viruses and around 200 new viruses are
+	     discovered each month, so being up to date with your antivirus protects
+	     you and your information</li>
+         <li>Antivirus software is especially useful when it comes to analyzing
+	     links and attachments in your email.</li>
+         <li>Block adds and spam.</li>
+         <li>Some even offer password managers to protect your passwords.</li>
+         <li>Limits the access of websites and enhances your web protection.</li>
+         </ul>
+         </td>
+         </tr>
+         </tbody>
+         </table>
+
+         <h1>Malwares & Viruses</h1>
+         <p><b>Malware is a software with the intention of causing harm and can be
+	       done through viruses, worms, trojans, ransomware, spyware, or adware,
+	       with these just to name a few</b></p>
+
+         <table>
+         <thead>
+         <tr>
+         <th>The Types of Virus</th>
+         <th>Definition</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr>
+         <td>Viruses</td>
+         <td>The basic definiton that most people use is virus, but in
+	     reality there are actually different types, some even with
+	     different effects. For general terms, a virus is a program
+	     created for malicious intentions of infecting one or spreading
+	     to many computers to disrupt the network. They can get into
+	     your computer either through downloaded files, email links,
+	     or just by going through the internet.</td>
+         </tr>
+         <tr>
+         <td>Worms</td>
+         <td>A worm does not need to attach to a program to run it's virus,
+	     and these can replicate themselves and work to their full
+	     ability without any user interaction. Scary right? Your computer
+	     just needs to be on and you could be getting attacked while you
+	     don't have anything open.</td>
+         </tr>
+         <tr>
+         <td>Trojans</td>
+         <td>Trojans act just like the ancient story with the trojan horse,
+	     where they act and seem like a normal program but are actually
+	     carrying a harmful payload that can cause some damage to your
+	     computer. However, these are usually only for one computer and
+	     don't necessarily spread to other computers.</td>
+         </tr>
+         <tr>
+         <td>Backdoor Trojans</td>
+         <td>Same as a regular trojan but these allow attackers to gain access
+	     to your computer from the comfort of their own. Allowing them to
+	     access your computer as if they were sitting right next to you and
+	     accessing all your information.</td>
+         </tr>
+         </tbody>
+         </table>
+	
+      	 <h3>You can find the 10 tips on how to prevent malware/virus from infecting
+	     your computer by visiting this <a href="tips.html">page</a>.</h3>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
